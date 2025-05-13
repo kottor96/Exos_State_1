@@ -6,7 +6,7 @@ export default function Card({type,url,nom,prenom,titre,time,last,mode,action}) 
     
     return(
         <div className="card_bg">
-            <div>
+            <div className="card_head">
                 {type=='titre' && 
                     <Card_name
                         url={url}
