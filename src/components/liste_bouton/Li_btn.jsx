@@ -1,5 +1,5 @@
-export default function Li_btn({nom}){
+export default function Li_btn({nom,setMode}){
     <li>
-        <a href="#">{nom}</a>
+        <button onClick={setMode(nom.toLocaleLowerCase)}>{nom}</button>
     </li>
 }

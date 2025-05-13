@@ -2,7 +2,7 @@ import Card from "./Card"
 import Img from "../assets/images/image-jeremy.png"
 import timeType from "../../data.json"
 
-export default function Section_card(){
+export default function Section_card({action,mode}){
     
     return(
         <section>
@@ -12,6 +12,8 @@ export default function Section_card(){
                     url={Img}
                     nom={"Robson"}
                     prenom={'Jeremy'}
+                    mode={mode}
+                    action={action}
                 />
             </div>
             <div>
