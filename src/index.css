@@ -6,4 +6,34 @@ body {
   background-color: hsl(226, 43%, 10%);
 }
 
+.card {
+  background-color: hsl(235, 46%, 20%);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  gap: 1rem;
+  max-width: 100%;
+}
+section .titre {
+  flex: 3;
+  min-height: 100%;
+}
+section .commun {
+  flex: 7;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 /*# sourceMappingURL=index.css.map */

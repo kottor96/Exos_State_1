@@ -5,7 +5,7 @@ import timeType from "../../data.json"
 export default function Section_card({action,mode}){
     
     return(
-        <section className="ligh_mode">
+        <section>
             <div className="titre">
                 <Card
                     type='titre'
