@@ -5,8 +5,8 @@ import timeType from "../../data.json"
 export default function Section_card({action,mode}){
     
     return(
-        <section>
-            <div>
+        <section className="ligh_mode">
+            <div className="titre">
                 <Card
                     type='titre'
                     url={Img}
@@ -16,7 +16,7 @@ export default function Section_card({action,mode}){
                     action={action}
                 />
             </div>
-            <div>
+            <div className="commun">
                 {timeType.map((item,index) => (
                     <Card
                         key={index}
