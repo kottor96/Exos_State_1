@@ -4,6 +4,8 @@ import Section_card from './components/Section_card'
 
 function App() {
   const [cycle,setCycle] = useState('daily')
+  console.log(cycle);
+  
   return (
     <>
       <Section_card mode={cycle} action={setCycle}/>

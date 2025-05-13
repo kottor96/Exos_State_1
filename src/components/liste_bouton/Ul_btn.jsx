@@ -1,6 +1,7 @@
 import Li_btn from "./Li_btn";
 
-export default function Ul_btn(action){
+export default function Ul_btn({action}){
+    
     return(
         <ul>
             <Li_btn

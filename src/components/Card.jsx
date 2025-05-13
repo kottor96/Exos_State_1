@@ -3,6 +3,8 @@ import Card_clasique from "./card_clasique/Card_clasique";
 import Card_name from "./profil_card/Card_profil";
 
 export default function Card({type,url,nom,prenom,titre,time,last,mode,action}) {
+    console.log(action);
+    
     return(
         <div className="card_bg">
             <div>
@@ -16,9 +18,9 @@ export default function Card({type,url,nom,prenom,titre,time,last,mode,action}) 
             </div>
             <div className="card_content">
                 {type=='titre' ? 
-                    <Ul_btn mode={mode} action={action}/>
+                    <Ul_btn action={action}/>
                     :
-                    type = 'clasique' 
+                    type == 'classique' 
                     && 
                     <Card_clasique 
                         titre={titre}
