@@ -64,9 +64,9 @@ export default function Section_card({action,mode}){
                         key={index}
                         type="classique"
                         titre={item.title}
-                        time={item.timeframes.daily.current}
-                        last={item.timeframes.daily.previous}
-                        mode={'daily'}
+                        time={item.timeframes[mode].current}
+                        last={item.timeframes[mode].previous}
+                        mode={mode}
                     />
                 ))}
             </div>

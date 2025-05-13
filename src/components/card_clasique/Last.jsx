@@ -1,3 +1,7 @@
 export default function Last({mode,last}){
-    <p>{mode} - {last}hrs</p>
+    
+    return(
+        <p>{mode} - {last}hrs</p>
+    )
+    
 }

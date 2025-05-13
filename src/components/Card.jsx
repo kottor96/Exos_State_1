@@ -3,7 +3,6 @@ import Card_clasique from "./card_clasique/Card_clasique";
 import Card_name from "./profil_card/Card_profil";
 
 export default function Card({type,url,nom,prenom,titre,time,last,mode,action}) {
-    console.log(action);
     
     return(
         <div className="card_bg">
