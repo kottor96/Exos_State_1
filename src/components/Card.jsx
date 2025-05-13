@@ -24,6 +24,7 @@ export default function Card({type,url,nom,prenom,titre,time,last,mode}) {
                         titre={titre}
                         time={time}
                         last={last}
+                        mode={mode}
                     />
                 }
             </div>

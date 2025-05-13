@@ -1,18 +1,21 @@
 import Card from "./Card"
+import Img from "../assets/images/image-jeremy.png"
+import timeType from "../../data.json"
 
 export default function Section_card(){
+    
     return(
         <section>
             <div>
                 <Card
                     type='titre'
-                    url={'../assets/image-jeremy.png'}
+                    url={Img}
                     nom={"Robson"}
                     prenom={'Jeremy'}
                 />
             </div>
             <div>
-                <Card
+                {/* <Card
                     type={'clasique'}
                     titre={'Work'}
                     time={32}
@@ -53,7 +56,17 @@ export default function Section_card(){
                     time={2}
                     last={2}
                     mode={'week'}
-                />
+                /> */}
+                {timeType.map((item,index) => (
+                    <Card
+                        key={index}
+                        type="classique"
+                        titre={item.title}
+                        time={item.timeframes.daily.current}
+                        last={item.timeframes.daily.previous}
+                        mode={'daily'}
+                    />
+                ))}
             </div>
         </section>
     )
