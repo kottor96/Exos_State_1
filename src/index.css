@@ -120,6 +120,7 @@ body button {
   justify-content: flex-start;
   z-index: 2;
   align-items: flex-start;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
 }
