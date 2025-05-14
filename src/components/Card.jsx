@@ -17,7 +17,7 @@ export default function Card({type,url,nom,prenom,titre,time,last,mode,isDark,ac
                         isDark={isDark}
                     />
                 }
-                {type=='classique' && <img src={icons} onClick={()=>gi}} alt="icon"/>}
+                {type=='classique' && <img src={icons} onClick={()=>{alert('alerte au mushrom')}} alt="icon"/>}
             </div>
             <div className="card_body">
                 {type=='titre' ? 
