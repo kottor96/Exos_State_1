@@ -2,7 +2,7 @@ import Ul_btn from "./liste_bouton/Ul_btn";
 import Card_clasique from "./card_clasique/Card_clasique";
 import Card_name from "./profil_card/Card_profil";
 
-export default function Card({type,url,nom,prenom,titre,time,last,mode,action,className,icons,actionBis}) {
+export default function Card({type,url,nom,prenom,titre,time,last,mode,isDark,action,night,className,icons,actionBis}) {
     
     return(
         <div className="card">
@@ -13,6 +13,8 @@ export default function Card({type,url,nom,prenom,titre,time,last,mode,action,cl
                         nom={nom}
                         prenom={prenom}
                         actionBis={actionBis}
+                        night={night}
+                        isDark={isDark}
                     />
                 }
                 {type=='classique' && <img src={icons} alt="icon"/>}
