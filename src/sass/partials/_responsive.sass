@@ -16,4 +16,18 @@
     section
         flex-direction: column
         height: fit-content
+
+    .commun 
+        .card
+        .card_head
+            height: 8rem
+            max-height: 8rem
+        .card_body
+            padding: 2rem !important
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)) !important
+
+@media screen and ( max-width: 425px )
+    .commun
+        grid-template-columns: 1fr !important
+
     

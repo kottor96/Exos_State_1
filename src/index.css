@@ -44,7 +44,7 @@ body button {
   flex-direction: column;
 }
 .commun .card .card_head {
-  min-height: 30%;
+  min-height: 5rem;
   z-index: 1;
   border-radius: 20px 20px 0 0;
   display: flex;
@@ -205,6 +205,21 @@ section .commun {
   section {
     flex-direction: column;
     height: fit-content;
+  }
+  .commun {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)) !important;
+  }
+  .commun .card_head {
+    height: 8rem;
+    max-height: 8rem;
+  }
+  .commun .card_body {
+    padding: 2rem !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .commun {
+    grid-template-columns: 1fr !important;
   }
 }
 
