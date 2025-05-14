@@ -9,7 +9,7 @@ import socialIcon from '../assets/icon/icon-social.svg'
 import exercicesIcon from '../assets/icon/icon-exercise.svg'
 
 export default function Section_card({action,mode}){
-    const couleur = {'Play':'rouge','Work':'orange','Self Care':'jaune','Study':'cyan','Social':'violet','Exercise':'vert'}
+    const couleur = {'Study':'rouge','Work':'orange','Self Care':'jaune','Play':'cyan','Social':'violet','Exercise':'vert'}
     const icons = {'Play':playIcon,'Work':workIcon,'Self Care':selfIcon,'Study':studyIcon,'Social':socialIcon,'Exercise':exercicesIcon}
     
     

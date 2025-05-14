@@ -32,6 +32,62 @@ body button {
   border-radius: 20px;
 }
 
+.commun .card {
+  display: flex;
+  flex-direction: column;
+}
+.commun .card .card_head {
+  min-height: 30%;
+  z-index: 1;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.commun .card .card_head img {
+  width: 4rem;
+}
+.commun .card .rouge {
+  background-color: hsl(348, 100%, 68%);
+}
+.commun .card .orange {
+  background-color: hsl(15, 100%, 70%);
+}
+.commun .card .jaune {
+  background-color: hsl(43, 84%, 65%);
+}
+.commun .card .cyan {
+  background-color: hsl(195, 74%, 62%);
+}
+.commun .card .violet {
+  background-color: hsl(264, 64%, 52%);
+}
+.commun .card .vert {
+  background-color: hsl(145, 58%, 55%);
+}
+.commun .card .card_body {
+  margin-top: -10%;
+  border-radius: 20px;
+  height: 80%;
+  background-color: hsl(235, 46%, 20%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.commun .card .card_body h4, .commun .card .card_body h3, .commun .card .card_body p {
+  margin: 0;
+}
+.commun .card .card_body h4 {
+  font-size: 2em;
+}
+.commun .card .card_body h3 {
+  font-size: 1em;
+}
+
+.titre .card {
+  justify-content: space-between;
+}
 .titre .card .card_head {
   background-color: hsl(246, 80%, 60%);
   color: rgb(255, 255, 255);
@@ -61,37 +117,10 @@ body button {
   gap: 0.8rem;
   box-sizing: border-box;
   margin: 0;
+  padding-bottom: 2rem;
 }
-
-.commun .card {
-  display: flex;
-  flex-direction: column;
-}
-.commun .card .card_head {
-  background-color: hsl(43, 84%, 65%);
-  min-height: 30%;
-  z-index: 1;
-  border-radius: 20px 20px 0 0;
-}
-.commun .card .card_body {
-  margin-top: -10%;
-  border-radius: 20px;
-  height: 80%;
-  background-color: hsl(235, 46%, 20%);
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 1rem;
-}
-.commun .card .card_body h4, .commun .card .card_body h3, .commun .card .card_body p {
-  margin: 0;
-}
-.commun .card .card_body h4 {
-  font-size: 2em;
-}
-.commun .card .card_body h3 {
-  font-size: 1em;
+.titre ul li button:hover {
+  color: hsl(236, 100%, 87%) !important;
 }
 
 section {

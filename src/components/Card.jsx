@@ -18,7 +18,7 @@ export default function Card({type,url,nom,prenom,titre,time,last,mode,action,cl
             </div>
             <div className="card_body">
                 {type=='titre' ? 
-                    <Ul_btn action={action}/>
+                    <Ul_btn action={action} mode={mode}/>
                     :
                     type == 'classique' 
                     && 

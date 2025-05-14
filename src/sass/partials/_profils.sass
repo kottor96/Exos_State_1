@@ -1,0 +1,34 @@
+@use './_variable' as *
+
+.titre
+    .card
+        justify-content: space-between
+        .card_head
+            background-color: $blue_ligh
+            color: $white
+            height: 70%
+            border-radius: 20px
+            padding: 2rem
+            justify-content: flex-start
+            gap: 2rem
+            align-items: flex-start
+            display: flex
+            flex-direction: column
+            h1,p
+                margin: 0
+            img
+                height: 30%
+                border-radius:50%
+                border: 3px $white solid
+            h1
+                font-size: 3rem
+    ul
+        display: flex
+        flex-direction: column
+        gap: 0.8rem
+        box-sizing: border-box
+        margin: 0
+        padding-bottom: 2rem
+        li
+            button:hover
+                color:$pale_Blue !important

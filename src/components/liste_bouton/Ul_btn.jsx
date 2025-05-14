@@ -1,17 +1,17 @@
 import Li_btn from "./Li_btn";
 
-export default function Ul_btn({action}){
+export default function Ul_btn({action,mode}){
     
     return(
         <ul>
             <Li_btn
-                nom="Daily" setMode={action}
+                nom="Daily" className={mode=='daily' && 'active'} setMode={action}
             />
             <Li_btn
-                nom="Weekly" setMode={action}
+                nom="Weekly" className={mode=='weekly' && 'active'} setMode={action}
             />
             <Li_btn
-                nom="Monthly" setMode={action}
+                nom="Monthly" className={mode=='monthly' && 'active'} setMode={action}
             />
             
         </ul>
