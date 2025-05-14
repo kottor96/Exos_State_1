@@ -8,7 +8,12 @@
     @include card($blue,$white)
 
 
-
+.point
+    display: flex
+    justify-content: space-between
+    align-items: center
+// img
+    
 .commun
     .card
         // overflow: hidden
@@ -22,6 +27,9 @@
             justify-content: flex-end
             img
                 width: 4rem
+            img:hover
+                filter: brightness(1.1)
+                cursor: pointer
         // class
 
         .rouge
@@ -47,13 +55,18 @@
             flex-direction: column
             justify-content: space-evenly
             padding: 1rem
+            img:hover
+                filter: brightness(1.2)
+                cursor: pointer
             h4,h3,p
                 margin: 0
             h4
                 font-size: 2em
             h3
                 font-size: 1em
-
+        .card_body:hover
+            background-color: $blue_bis
+        
         
 // class utiliser
 // 'Play':'rouge','Work':'orange','Self Care':'jaune','Study':'cyan','Social':'violet','Exercise':'vert'
@@ -61,3 +74,6 @@
     
 // dark
 .dark-mode
+    .titre
+        .card:hover
+            background-color: $pale_Blue !important

@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: rubik, sans-serif;
+  color: hsl(226, 43%, 10%);
 }
 body ul {
   list-style: none;
@@ -32,6 +33,12 @@ body button {
   border-radius: 20px;
 }
 
+.point {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .commun .card {
   display: flex;
   flex-direction: column;
@@ -45,6 +52,10 @@ body button {
 }
 .commun .card .card_head img {
   width: 4rem;
+}
+.commun .card .card_head img:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
 }
 .commun .card .rouge {
   background-color: hsl(348, 100%, 68%);
@@ -75,6 +86,10 @@ body button {
   justify-content: space-evenly;
   padding: 1rem;
 }
+.commun .card .card_body img:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
 .commun .card .card_body h4, .commun .card .card_body h3, .commun .card .card_body p {
   margin: 0;
 }
@@ -83,6 +98,13 @@ body button {
 }
 .commun .card .card_body h3 {
   font-size: 1em;
+}
+.commun .card .card_body:hover {
+  background-color: hsl(235, 46%, 30%);
+}
+
+.dark-mode .titre .card:hover {
+  background-color: hsl(236, 100%, 87%) !important;
 }
 
 .titre .card {
@@ -93,9 +115,10 @@ body button {
   color: rgb(255, 255, 255);
   height: 70%;
   border-radius: 20px;
+  margin-bottom: -1rem;
   padding: 2rem;
   justify-content: flex-start;
-  gap: 2rem;
+  z-index: 2;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -111,10 +134,19 @@ body button {
 .titre .card .card_head h1 {
   font-size: 3rem;
 }
+.titre .card .card_body:hover {
+  background-color: hsl(235, 46%, 30%);
+}
+.titre .card .card_body {
+  height: 100%;
+  padding-top: 2rem;
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+}
 .titre ul {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1.8rem;
   box-sizing: border-box;
   margin: 0;
   padding-bottom: 2rem;
@@ -149,6 +181,31 @@ section .commun {
   box-sizing: border-box;
   gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    max-height: none;
+  }
+  .titre {
+    text-align: center;
+  }
+  .titre .card_head img {
+    height: 8rem !important;
+  }
+  .titre .card_head > div {
+    align-self: center;
+    text-align: start;
+  }
+  .titre ul {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+  }
+  section {
+    flex-direction: column;
+    height: fit-content;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

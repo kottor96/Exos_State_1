@@ -1,7 +1,6 @@
 import Li_btn from "./Li_btn";
 
 export default function Ul_btn({action,mode}){
-    console.log(mode);
     
     return(
         <ul>

@@ -3,14 +3,16 @@
 .titre
     .card
         justify-content: space-between
+
         .card_head
             background-color: $blue_ligh
             color: $white
             height: 70%
             border-radius: 20px
+            margin-bottom: -1rem
             padding: 2rem
             justify-content: flex-start
-            gap: 2rem
+            z-index: 2
             align-items: flex-start
             display: flex
             flex-direction: column
@@ -22,10 +24,20 @@
                 border: 3px $white solid
             h1
                 font-size: 3rem
+        .card_body:hover
+            background-color: $blue_bis
+        .card_body
+            height: 100%
+            padding-top: 2rem
+            z-index: 1
+            // overflow: hidden
+            border-radius: 0 0 20px 20px
+        
+
     ul
         display: flex
         flex-direction: column
-        gap: 0.8rem
+        gap: 1.8rem
         box-sizing: border-box
         margin: 0
         padding-bottom: 2rem
