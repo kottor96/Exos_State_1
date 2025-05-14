@@ -68,19 +68,19 @@
     }
   },
   {
-    "title": "Social",
+    "title": "Anti Social",
     "timeframes": {
       "daily": {
-        "current": 0,
-        "previous": 0
+        "current": 3,
+        "previous": 2
       },
       "weekly": {
-        "current": 0,
-        "previous": 0
+        "current": 50,
+        "previous": 40
       },
       "monthly": {
-        "current": 0,
-        "previous": 0
+        "current": 240,
+        "previous": 80
       }
     }
   },
