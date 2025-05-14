@@ -121,6 +121,10 @@ body button {
 }
 .titre ul li button:hover {
   color: hsl(236, 100%, 87%) !important;
+  cursor: pointer;
+}
+.titre ul .active button {
+  color: hsl(235, 45%, 61%);
 }
 
 section {

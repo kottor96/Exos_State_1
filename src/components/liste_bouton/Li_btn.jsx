@@ -1,6 +1,6 @@
-export default function Li_btn({nom,setMode}){
+export default function Li_btn({nom,setMode, className}){
     return(
-        <li>
+        <li className={className}>
             <button onClick={() => setMode(nom.toLowerCase())}>
                 {nom}
             </button>
