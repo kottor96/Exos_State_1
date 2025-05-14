@@ -4,8 +4,7 @@
 
     
         
-.card
-    @include card($blue,$white)
+
 
 
 .point
@@ -49,8 +48,7 @@
             margin-top: -10% 
             border-radius: 20px
             height: 80%
-            background-color: $blue
-            z-index: 2
+            z-index: 3
             display: flex
             flex-direction: column
             justify-content: space-evenly
@@ -64,8 +62,7 @@
                 font-size: 2em
             h3
                 font-size: 1em
-        .card_body:hover
-            background-color: $blue_bis
+        
         
         
 // class utiliser
@@ -73,7 +70,26 @@
 
     
 // dark
-.dark-mode
-    .titre
-        .card:hover
-            background-color: $pale_Blue !important
+
+.dark_mode
+    
+    .card
+        @include card($blue,$white)
+    .card_body
+        background-color: $blue
+    .card_body:hover
+        background-color: $blue_bis
+
+
+.light_mode
+    .commun
+        .card_body
+            p
+                filter: brightness(1.1)
+            z-index: 20
+            background-color: $aliceBlue
+    .card
+        @include card($aliceBlue,$dark )
+
+        
+        

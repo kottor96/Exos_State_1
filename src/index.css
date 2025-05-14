@@ -23,14 +23,12 @@ body button {
   font-size: 18px;
 }
 
-.card {
-  background-color: hsl(235, 46%, 20%);
-  color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
+.light_mode button {
+  color: rgb(0, 0, 0);
+}
+.light_mode p {
+  color: rgb(65, 53, 53);
+  font-size: 18px;
 }
 
 .point {
@@ -79,8 +77,7 @@ body button {
   margin-top: -10%;
   border-radius: 20px;
   height: 80%;
-  background-color: hsl(235, 46%, 20%);
-  z-index: 2;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -99,12 +96,38 @@ body button {
 .commun .card .card_body h3 {
   font-size: 1em;
 }
-.commun .card .card_body:hover {
+
+.dark_mode .card {
+  background-color: hsl(235, 46%, 20%);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.dark_mode .card_body {
+  background-color: hsl(235, 46%, 20%);
+}
+.dark_mode .card_body:hover {
   background-color: hsl(235, 46%, 30%);
 }
 
-.dark-mode .titre .card:hover {
-  background-color: hsl(236, 100%, 87%) !important;
+.light_mode .commun .card_body {
+  z-index: 20;
+  background-color: #c8e3fb;
+}
+.light_mode .commun .card_body p {
+  filter: brightness(1.1);
+}
+.light_mode .card {
+  background-color: #c8e3fb;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .titre .card {
@@ -135,9 +158,6 @@ body button {
 .titre .card .card_head h1 {
   font-size: 3rem;
 }
-.titre .card .card_body:hover {
-  background-color: hsl(235, 46%, 30%);
-}
 .titre .card .card_body {
   height: 100%;
   padding-top: 2rem;
@@ -158,6 +178,13 @@ body button {
 }
 .titre ul .active button {
   color: hsl(235, 45%, 61%);
+}
+
+.dark_mode .titre .card:hover {
+  background-color: hsl(236, 100%, 87%) !important;
+}
+.dark_mode .titre .card:hover .card_body:hover {
+  background-color: hsl(235, 46%, 30%);
 }
 
 section {
