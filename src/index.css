@@ -76,7 +76,7 @@ body button {
 .commun .card .card_body {
   margin-top: -10%;
   border-radius: 20px;
-  height: 80%;
+  height: 100%;
   z-index: 3;
   display: flex;
   flex-direction: column;
@@ -119,6 +119,9 @@ body button {
 }
 .light_mode .commun .card_body p {
   filter: brightness(1.1);
+}
+.light_mode .commun .card_body:hover {
+  background-color: #acd5f9;
 }
 .light_mode .card {
   background-color: #c8e3fb;
@@ -185,6 +188,13 @@ body button {
 }
 .dark_mode .titre .card:hover .card_body:hover {
   background-color: hsl(235, 46%, 30%);
+}
+
+.light_mode .titre p {
+  color: hsl(235, 45%, 61%);
+}
+.light_mode .titre .card:hover .card_body:hover {
+  background-color: #acd5f9;
 }
 
 section {
