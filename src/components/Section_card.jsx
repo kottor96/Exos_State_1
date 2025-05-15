@@ -15,9 +15,11 @@ export default function Section_card({action,mode,night,isDark}){
     const couleur = {'Study':'rouge','Work':'orange','Self Care':'jaune','Play':'cyan','Social':'violet','Exercise':'vert','Anti Social':'violet'}
     const icons = {'Play':playIcon,'Work':workIcon,'Self Care':selfIcon,'Study':studyIcon,'Social':socialIcon,'Exercise':exercicesIcon,'Anti Social':socialIcon}
     const [user,setUser] = useState(timeType)
+
     function changeUser(){
         user==timeType? setUser(timeType2) : setUser(timeType)
     }
+    
     return(
         <section>
             <div className="titre">
