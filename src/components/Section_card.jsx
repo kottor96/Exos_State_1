@@ -11,6 +11,7 @@ import socialIcon from '../assets/icon/icon-social.svg'
 import exercicesIcon from '../assets/icon/icon-exercise.svg'
 import { useState } from "react"
 
+
 export default function Section_card({action,mode,night,isDark}){
     const couleur = {'Study':'rouge','Work':'orange','Self Care':'jaune','Play':'cyan','Social':'violet','Exercise':'vert','Anti Social':'violet'}
     const icons = {'Play':playIcon,'Work':workIcon,'Self Care':selfIcon,'Study':studyIcon,'Social':socialIcon,'Exercise':exercicesIcon,'Anti Social':socialIcon}
@@ -19,7 +20,7 @@ export default function Section_card({action,mode,night,isDark}){
     function changeUser(){
         user==timeType? setUser(timeType2) : setUser(timeType)
     }
-    
+
     return(
         <section>
             <div className="titre">
