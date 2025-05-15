@@ -1,6 +1,7 @@
 import Ul_btn from "./liste_bouton/Ul_btn";
 import Card_clasique from "./card_clasique/Card_clasique";
 import Card_name from "./profil_card/Card_profil";
+import { icon } from "@fortawesome/fontawesome-svg-core";
 
 export default function Card({type,url,nom,prenom,titre,time,last,mode,isDark,action,night,className,icons,actionBis}) {
     
